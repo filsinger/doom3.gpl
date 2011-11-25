@@ -224,8 +224,8 @@ idImage *idMaterial::GetEditorImage( void ) const {
 
 // info parms
 typedef struct {
-	char	*name;
-	int		clearSolid, surfaceFlags, contents;
+	const char	*name;
+	int			clearSolid, surfaceFlags, contents;
 } infoParm_t;
 
 static infoParm_t	infoParms[] = {
@@ -505,9 +505,9 @@ idMaterial::ParseTerm
 Returns a register index
 =================
 */
-int idMaterial::ParseTerm( idLexer &src ) {
+size_t idMaterial::ParseTerm( idLexer &src ) {
 	idToken token;
-	int		a, b;
+	size_t		a, b;
 
 	src.ReadToken( &token );
 
@@ -2325,7 +2325,7 @@ bool idMaterial::Parse( const char *text, const int textLength ) {
 idMaterial::Print
 ===================
 */
-char *opNames[] = {
+const char *opNames[] = {
 	"OP_TYPE_ADD",
 	"OP_TYPE_SUBTRACT",
 	"OP_TYPE_MULTIPLY",
@@ -2601,7 +2601,6 @@ maps are constant, but 2/3 of the surface references are.
 This is probably an optimization of dubious value.
 ==================
 */
-static int	c_constant, c_variable;
 void idMaterial::CheckForConstantRegisters() {
 	if ( !pd->registersAreConstant ) {
 		return;

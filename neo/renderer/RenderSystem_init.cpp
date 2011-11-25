@@ -40,8 +40,6 @@ If you have questions concerning this license or the applicable additional terms
 
 glconfig_t	glConfig;
 
-static void GfxInfo_f( void );
-
 const char *r_rendererArgs[] = { "best", "arb", "arb2", "Cg", "exp", "nv10", "nv20", "r200", NULL };
 
 idCVar r_inhibitFragmentProgram( "r_inhibitFragmentProgram", "0", CVAR_RENDERER | CVAR_BOOL, "ignore the fragment program extension" );
@@ -315,7 +313,7 @@ PFNGLDEPTHBOUNDSEXTPROC                 qglDepthBoundsEXT;
 R_CheckExtension
 =================
 */
-bool R_CheckExtension( char *name ) {
+bool R_CheckExtension( const char *name ) {
 	if ( !strstr( glConfig.extensions_string, name ) ) {
 		common->Printf( "X..%s not found\n", name );
 		return false;
@@ -526,7 +524,7 @@ static void R_CheckPortableExtensions( void ) {
 	// check for minimum set
 	if ( !glConfig.multitextureAvailable || !glConfig.textureEnvCombineAvailable || !glConfig.cubeMapAvailable
 		|| !glConfig.envDot3Available ) {
-			common->Error( common->GetLanguageDict()->GetString( "#str_06780" ) );
+			common->Error( "%s", common->GetLanguageDict()->GetString( "#str_06780" ) );
 	}
 
  	// GL_EXT_depth_bounds_test
@@ -1353,8 +1351,6 @@ void R_ScreenShot_f( const idCmdArgs &args ) {
 
 	int width = glConfig.vidWidth;
 	int height = glConfig.vidHeight;
-	int	x = 0;
-	int y = 0;
 	int	blends = 0;
 
 	switch ( args.Argc() ) {
@@ -1462,7 +1458,7 @@ void R_EnvShot_f( const idCmdArgs &args ) {
 	renderView_t	ref;
 	viewDef_t	primary;
 	int			blends;
-	char	*extensions[6] =  { "_px.tga", "_nx.tga", "_py.tga", "_ny.tga", 
+	const char	*extensions[6] =  { "_px.tga", "_nx.tga", "_py.tga", "_ny.tga", 
 		"_pz.tga", "_nz.tga" };
 	int			size;
 
@@ -1599,10 +1595,8 @@ void R_MakeAmbientMap_f( const idCmdArgs &args ) {
 	idStr fullname;
 	const char	*baseName;
 	int			i;
-	renderView_t	ref;
-	viewDef_t	primary;
 	int			downSample;
-	char	*extensions[6] =  { "_px.tga", "_nx.tga", "_py.tga", "_ny.tga", 
+	const char	*extensions[6] =  { "_px.tga", "_nx.tga", "_py.tga", "_ny.tga", 
 		"_pz.tga", "_nz.tga" };
 	int			outSize;
 	byte		*buffers[6];
@@ -1773,7 +1767,7 @@ void R_SetColorMappings( void ) {
 GfxInfo_f
 ================
 */
-void GfxInfo_f( const idCmdArgs &args ) {
+static void GfxInfo_f( const idCmdArgs &args ) {
 	const char *fsstrings[] =
 	{
 		"windowed",

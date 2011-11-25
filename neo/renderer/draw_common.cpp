@@ -1701,6 +1701,9 @@ void	RB_STD_DrawView( void ) {
 	case BE_R200:
 		RB_R200_DrawInteractions();
 		break;
+	case BE_BAD:
+		assert(false);
+		break;
 	}
 
 	// disable stencil shadow test

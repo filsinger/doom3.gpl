@@ -239,7 +239,6 @@ static void R_AlphaRampImage( idImage *image ) {
 }
 
 
-
 /*
 ==================
 R_CreateDefaultImage
@@ -911,7 +910,7 @@ void R_QuadraticImage( idImage *image ) {
 
 
 typedef struct {
-	char *name;
+	const char *name;
 	int	minimize, maximize;
 } filterName_t;
 
@@ -984,6 +983,7 @@ static filterName_t textureFilters[] = {
 		case TT_CUBIC:
 			texEnum = GL_TEXTURE_CUBE_MAP_EXT;
 			break;
+		default: break;
 		}
 
 		// make sure we don't start a background load

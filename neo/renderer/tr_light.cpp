@@ -1278,6 +1278,7 @@ void R_AddDrawSurf( const srfTriangles_t *tri, const viewEntity_t *space, const 
 		case TG_WOBBLESKY_CUBE:
 			R_WobbleskyTexGen( drawSurf, tr.viewDef->renderView.vieworg );
 			break;
+		default: break;
 	}
 
 	// check for gui surfaces

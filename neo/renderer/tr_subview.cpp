@@ -270,7 +270,6 @@ R_XrayViewBySurface
 */
 static viewDef_t *R_XrayViewBySurface( drawSurf_t *drawSurf ) {
 	viewDef_t		*parms;
-	orientation_t	surface, camera;
 	idPlane			originalPlane, plane;
 
 	// copy the viewport size from the original
@@ -510,6 +509,7 @@ bool	R_GenerateSurfaceSubview( drawSurf_t *drawSurf ) {
 			case DI_XRAY_RENDER:
 				R_XrayRender( drawSurf, const_cast<textureStage_t *>(&stage->texture), scissor );
 				break;
+			default: break;
 			}
 		}
 		return true;

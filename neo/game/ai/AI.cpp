@@ -1118,6 +1118,7 @@ void idAI::Think( void ) {
 				PlayChatter();
 				CheckBlink();
 				break;
+				case NUM_MOVETYPES: assert(false); break;
 			}
 		}
 
@@ -1431,7 +1432,6 @@ float idAI::TravelDistance( const idVec3 &start, const idVec3 &end ) const {
 	int			toArea;
 	float		dist;
 	idVec2		delta;
-	aasPath_t	path;
 
 	if ( !aas ) {
 		// no aas, so just take the straight line distance
@@ -2226,6 +2226,8 @@ bool idAI::GetMovePos( idVec3 &seekPos ) {
 		seekPos = org;
 		return false;
 		break;
+	case NUM_NONMOVING_COMMANDS: assert(false); break;
+	default: break;
 	}
 
 	if ( move.moveCommand == MOVE_TO_ENTITY ) {
@@ -3758,7 +3760,6 @@ void idAI::UpdateEnemyPosition( void ) {
 	int				enemyAreaNum;
 	int				areaNum;
 	aasPath_t		path;
-	predictedPath_t predictedPath;
 	idVec3			enemyPos;
 	bool			onGround;
 

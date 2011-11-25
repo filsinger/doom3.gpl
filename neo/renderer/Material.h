@@ -605,7 +605,7 @@ private:
 	expOp_t	*			GetExpressionOp( void );
 	int					EmitOp( int a, int b, expOpType_t opType );
 	int					ParseEmitOp( idLexer &src, int a, expOpType_t opType, int priority );
-	int					ParseTerm( idLexer &src );
+	size_t				ParseTerm( idLexer &src );
 	int					ParseExpressionPriority( idLexer &src, int priority );
 	int					ParseExpression( idLexer &src );
 	void				ClearStage( shaderStage_t *ss );

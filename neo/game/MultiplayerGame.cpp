@@ -1240,6 +1240,8 @@ void idMultiplayerGame::ExecuteVote( void ) {
 		case VOTE_NEXTMAP:
 			cmdSystem->BufferCommandText( CMD_EXEC_APPEND, "serverNextMap\n" );
 			break;
+		case VOTE_NONE: break;
+		case VOTE_COUNT: assert(false); break;
 	}
 }
 
@@ -1449,6 +1451,8 @@ void idMultiplayerGame::Run() {
 			}
 			break;
 		}
+		case INACTIVE: break;
+		case STATE_COUNT: assert(false); break;
 	}
 }
 

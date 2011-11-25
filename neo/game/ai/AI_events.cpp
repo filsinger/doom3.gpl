@@ -1643,7 +1643,6 @@ idAI::Event_TestChargeAttack
 =====================
 */
 void idAI::Event_TestChargeAttack( void ) {
-	trace_t trace;
 	idActor *enemyEnt = enemy.GetEntity();
 	predictedPath_t path;
 	idVec3 end;
@@ -2027,6 +2026,7 @@ void idAI::Event_RestoreMove( void ) {
 	case MOVE_WANDER :
 		WanderAround();
 		break;
+	case NUM_MOVE_COMMANDS: assert(false); break;
 	}
 
 	if ( GetMovePos( goalPos ) ) {

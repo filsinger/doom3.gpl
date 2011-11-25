@@ -381,7 +381,6 @@ void idTextureLevel::UpdateTile( int localX, int localY, int globalX, int global
 			break;
 		}
 
-		int	byteSize = size * 4;
 		// mip-map in place
 		for ( int y = 0 ; y < size ; y++ ) {
 			byte	*in, *in2, *out;
@@ -539,7 +538,7 @@ void	idMegaTexture::GenerateMegaMipMaps( megaTextureHeader_t *header, idFile *ou
 
 						if ( tx > width || ty > height ) {
 							// off edge, zero fill
-							memset( newBlock, 0, sizeof( newBlock ) );
+							memset( newBlock, 0, tileSize );
 						} else {
 							tileNum = tileOffset + ty * width + tx;
 							inFile->Seek( tileNum * tileSize, FS_SEEK_SET );
