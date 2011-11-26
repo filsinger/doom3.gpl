@@ -57,7 +57,7 @@ static bool		mouseActive		= false;
 static bool		inputRectValid	= NO;
 static CGRect	inputRect;
 static const void *sKLuchrData	= NULL;
-#if MAC_OS_X_VERSION_MIN_REQUIRED < MAC_OS_X_VERSION_10_5
+#if !defined(MAC_OS_X_VERSION_10_5)
 static const void *sKLKCHRData	= NULL;
 #endif
 
@@ -126,7 +126,7 @@ static const int *vkeyTable = vkeyToDoom3Key;
  ===========
  */
 void Sys_InitScanTable( void ) {
-#if MAC_OS_X_VERSION_MIN_REQUIRED < MAC_OS_X_VERSION_10_5
+#if !defined(MAC_OS_X_VERSION_10_5)
 	KeyboardLayoutRef kbLayout;
 #endif
 
@@ -143,7 +143,7 @@ void Sys_InitScanTable( void ) {
 		vkeyTable = vkeyToDoom3Key_German;
 	}
 
-#if MAC_OS_X_VERSION_MIN_REQUIRED < MAC_OS_X_VERSION_10_5
+#if !defined(MAC_OS_X_VERSION_10_5)
 	if ( KLGetCurrentKeyboardLayout( &kbLayout )  == 0 ) {
 		if ( KLGetKeyboardLayoutProperty( kbLayout, kKLuchrData, &sKLuchrData ) ) {
 			common->Warning("KLGetKeyboardLayoutProperty failed");
@@ -254,7 +254,7 @@ void processMouseMovedEvent( NSEvent *mouseMovedEvent ) {
 
 inline bool OSX_LookupCharacter(unsigned short vkey, unsigned int modifiers, bool keyDownFlag, unsigned char *outChar)
 {
-#if MAC_OS_X_VERSION_MIN_REQUIRED < MAC_OS_X_VERSION_10_5
+#if !defined(MAC_OS_X_VERSION_10_5)
 	UInt32 translated;
 	UInt32 deadKeyState = 0;
 	UniChar unicodeString[16];
@@ -458,10 +458,10 @@ void processEvent( NSEvent *event ) {
 
 void Posix_PollInput( void ) {
     NSEvent *event;
-#if MAC_OS_X_VERSION_MIN_REQUIRED >= MAC_OS_X_VERSION_10_5
-	NSUInteger eventMask;
-#else
+#if !defined(MAC_OS_X_VERSION_10_5)
     unsigned int eventMask;
+#else
+	NSUInteger eventMask;
 #endif
     eventMask = NSAnyEventMask;
      
