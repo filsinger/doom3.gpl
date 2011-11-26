@@ -505,9 +505,9 @@ idMaterial::ParseTerm
 Returns a register index
 =================
 */
-size_t idMaterial::ParseTerm( idLexer &src ) {
+int idMaterial::ParseTerm( idLexer &src ) {
 	idToken token;
-	size_t		a, b;
+	int		a, b;
 
 	src.ReadToken( &token );
 

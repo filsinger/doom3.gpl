@@ -157,7 +157,7 @@ public:
 
 struct idTransitionData {
 	idWinVar *data;
-	size_t	offset;
+	int	offset;
 	idInterpolateAccelDecelLinear<idVec4> interp;
 };
 
@@ -352,7 +352,7 @@ protected:
 	wexpOp_t *ExpressionOp();
 	int EmitOp( int a, int b, wexpOpType_t opType, wexpOp_t **opp = NULL );
 	int ParseEmitOp( idParser *src, int a, wexpOpType_t opType, int priority, wexpOp_t **opp = NULL );
-	size_t ParseTerm( idParser *src, idWinVar *var = NULL, int component = 0 );
+	int ParseTerm( idParser *src, idWinVar *var = NULL, int component = 0 );
 	int ParseExpressionPriority( idParser *src, int priority, idWinVar *var = NULL, int component = 0 );
 	void EvaluateRegisters(float *registers);
 	void SaveExpressionParseState();
