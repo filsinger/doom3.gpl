@@ -168,21 +168,21 @@
 /* Begin PBXFileReference section */
 		81225A1B0912C3A4005D34B9 /* idlib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = idlib.xcodeproj; sourceTree = "<group>"; };
 		81225A3B0912C42F005D34B9 /* PlayerIcon.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = PlayerIcon.cpp; path = ../../game/PlayerIcon.cpp; sourceTree = SOURCE_ROOT; };
-		81225A3C0912C42F005D34B9 /* Actor.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = Actor.cpp; path = ../../game/Actor.cpp; sourceTree = SOURCE_ROOT; };
-		81225A3D0912C42F005D34B9 /* Actor.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = Actor.h; path = ../../game/Actor.h; sourceTree = SOURCE_ROOT; };
-		81225A3E0912C42F005D34B9 /* AF.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = AF.cpp; path = ../../game/AF.cpp; sourceTree = SOURCE_ROOT; };
-		81225A3F0912C42F005D34B9 /* AF.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = AF.h; path = ../../game/AF.h; sourceTree = SOURCE_ROOT; };
+		81225A3C0912C42F005D34B9 /* Actor.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = Actor.cpp; path = ../../game/Actor.cpp; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		81225A3D0912C42F005D34B9 /* Actor.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = Actor.h; path = ../../game/Actor.h; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		81225A3E0912C42F005D34B9 /* AF.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = AF.cpp; path = ../../game/AF.cpp; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		81225A3F0912C42F005D34B9 /* AF.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = AF.h; path = ../../game/AF.h; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		81225A400912C42F005D34B9 /* AFEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = AFEntity.cpp; path = ../../game/AFEntity.cpp; sourceTree = SOURCE_ROOT; };
 		81225A410912C42F005D34B9 /* AFEntity.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = AFEntity.h; path = ../../game/AFEntity.h; sourceTree = SOURCE_ROOT; };
-		81225A430912C42F005D34B9 /* AAS.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = AAS.cpp; sourceTree = "<group>"; };
-		81225A440912C42F005D34B9 /* AAS.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AAS.h; sourceTree = "<group>"; };
-		81225A450912C42F005D34B9 /* AAS_debug.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = AAS_debug.cpp; sourceTree = "<group>"; };
-		81225A460912C42F005D34B9 /* AAS_local.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AAS_local.h; sourceTree = "<group>"; };
-		81225A470912C42F005D34B9 /* AAS_pathing.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = AAS_pathing.cpp; sourceTree = "<group>"; };
-		81225A480912C42F005D34B9 /* AAS_routing.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = AAS_routing.cpp; sourceTree = "<group>"; };
+		81225A430912C42F005D34B9 /* AAS.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = AAS.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		81225A440912C42F005D34B9 /* AAS.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AAS.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		81225A450912C42F005D34B9 /* AAS_debug.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = AAS_debug.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		81225A460912C42F005D34B9 /* AAS_local.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AAS_local.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		81225A470912C42F005D34B9 /* AAS_pathing.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = AAS_pathing.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		81225A480912C42F005D34B9 /* AAS_routing.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = AAS_routing.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		81225A490912C42F005D34B9 /* AI.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = AI.cpp; sourceTree = "<group>"; };
 		81225A4A0912C42F005D34B9 /* AI.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AI.h; sourceTree = "<group>"; };
-		81225A4B0912C42F005D34B9 /* AI_events.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = AI_events.cpp; sourceTree = "<group>"; };
+		81225A4B0912C42F005D34B9 /* AI_events.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = AI_events.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		81225A4C0912C42F005D34B9 /* AI_pathing.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = AI_pathing.cpp; sourceTree = "<group>"; };
 		81225A4D0912C42F005D34B9 /* AI_Vagary.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = AI_Vagary.cpp; sourceTree = "<group>"; };
 		81225A4F0912C42F005D34B9 /* Anim.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Anim.cpp; sourceTree = "<group>"; };
@@ -190,11 +190,11 @@
 		81225A510912C42F005D34B9 /* Anim_Blend.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Anim_Blend.cpp; sourceTree = "<group>"; };
 		81225A520912C42F005D34B9 /* Anim_Import.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Anim_Import.cpp; sourceTree = "<group>"; };
 		81225A530912C42F005D34B9 /* Anim_Testmodel.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Anim_Testmodel.cpp; sourceTree = "<group>"; };
-		81225A540912C42F005D34B9 /* Anim_Testmodel.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Anim_Testmodel.h; sourceTree = "<group>"; };
-		81225A550912C42F005D34B9 /* BrittleFracture.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = BrittleFracture.cpp; path = ../../game/BrittleFracture.cpp; sourceTree = SOURCE_ROOT; };
-		81225A560912C42F005D34B9 /* BrittleFracture.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = BrittleFracture.h; path = ../../game/BrittleFracture.h; sourceTree = SOURCE_ROOT; };
-		81225A570912C42F005D34B9 /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = Camera.cpp; path = ../../game/Camera.cpp; sourceTree = SOURCE_ROOT; };
-		81225A580912C42F005D34B9 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = Camera.h; path = ../../game/Camera.h; sourceTree = SOURCE_ROOT; };
+		81225A540912C42F005D34B9 /* Anim_Testmodel.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Anim_Testmodel.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		81225A550912C42F005D34B9 /* BrittleFracture.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = BrittleFracture.cpp; path = ../../game/BrittleFracture.cpp; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		81225A560912C42F005D34B9 /* BrittleFracture.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = BrittleFracture.h; path = ../../game/BrittleFracture.h; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		81225A570912C42F005D34B9 /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = Camera.cpp; path = ../../game/Camera.cpp; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		81225A580912C42F005D34B9 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = Camera.h; path = ../../game/Camera.h; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		81225A590912C42F005D34B9 /* Entity.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = Entity.cpp; path = ../../game/Entity.cpp; sourceTree = SOURCE_ROOT; };
 		81225A5A0912C42F005D34B9 /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = Entity.h; path = ../../game/Entity.h; sourceTree = SOURCE_ROOT; };
 		81225A5B0912C42F005D34B9 /* Fx.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = Fx.cpp; path = ../../game/Fx.cpp; sourceTree = SOURCE_ROOT; };
@@ -206,8 +206,8 @@
 		81225A610912C42F005D34B9 /* Game_network.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = Game_network.cpp; path = ../../game/Game_network.cpp; sourceTree = SOURCE_ROOT; };
 		81225A620912C42F005D34B9 /* GameEdit.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = GameEdit.cpp; path = ../../game/GameEdit.cpp; sourceTree = SOURCE_ROOT; };
 		81225A630912C42F005D34B9 /* GameEdit.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = GameEdit.h; path = ../../game/GameEdit.h; sourceTree = SOURCE_ROOT; };
-		81225A650912C42F005D34B9 /* Class.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Class.cpp; sourceTree = "<group>"; };
-		81225A660912C42F005D34B9 /* Class.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Class.h; sourceTree = "<group>"; };
+		81225A650912C42F005D34B9 /* Class.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = Class.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		81225A660912C42F005D34B9 /* Class.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Class.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		81225A670912C42F005D34B9 /* DebugGraph.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = DebugGraph.cpp; sourceTree = "<group>"; };
 		81225A680912C42F005D34B9 /* DebugGraph.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DebugGraph.h; sourceTree = "<group>"; };
 		81225A690912C42F005D34B9 /* Event.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Event.cpp; sourceTree = "<group>"; };
@@ -235,8 +235,8 @@
 		81225A7F0912C42F005D34B9 /* Mover.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = Mover.h; path = ../../game/Mover.h; sourceTree = SOURCE_ROOT; };
 		81225A800912C42F005D34B9 /* MultiplayerGame.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = MultiplayerGame.cpp; path = ../../game/MultiplayerGame.cpp; sourceTree = SOURCE_ROOT; };
 		81225A810912C42F005D34B9 /* MultiplayerGame.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = MultiplayerGame.h; path = ../../game/MultiplayerGame.h; sourceTree = SOURCE_ROOT; };
-		81225A830912C42F005D34B9 /* Clip.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Clip.cpp; sourceTree = "<group>"; };
-		81225A840912C42F005D34B9 /* Clip.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Clip.h; sourceTree = "<group>"; };
+		81225A830912C42F005D34B9 /* Clip.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = Clip.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		81225A840912C42F005D34B9 /* Clip.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Clip.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		81225A850912C42F005D34B9 /* Force.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Force.cpp; sourceTree = "<group>"; };
 		81225A860912C42F005D34B9 /* Force.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Force.h; sourceTree = "<group>"; };
 		81225A870912C42F005D34B9 /* Force_Constant.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Force_Constant.cpp; sourceTree = "<group>"; };
@@ -779,6 +779,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INSTALL_PATH = /usr/local/lib;
+				LD_DYLIB_INSTALL_NAME = "";
 				LIBRARY_STYLE = DYNAMIC;
 				MACH_O_TYPE = mh_dylib;
 				MAIN_CPP_DEFINES = _DEBUG;
@@ -810,6 +811,7 @@
 					GAME_DLL,
 					__WITH_PB__,
 				);
+				LD_DYLIB_INSTALL_NAME = "";
 				LIBRARY_STYLE = DYNAMIC;
 				MACH_O_TYPE = mh_dylib;
 				OTHER_CFLAGS = (
@@ -842,8 +844,8 @@
 					MACOS_X,
 					GAME_DLL,
 				);
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
-				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				MACOSX_DEPLOYMENT_TARGET = "";
 				SDKROOT = macosx10.6;
 				VALID_ARCHS = i386;
 			};
@@ -860,8 +862,8 @@
 					MACOS_X,
 					GAME_DLL,
 				);
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
-				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				MACOSX_DEPLOYMENT_TARGET = "";
 				OTHER_CFLAGS = (
 					"-finline",
 					"-finline-limit=1000",

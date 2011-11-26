@@ -108,7 +108,7 @@ idAASLocal::CalculateAreaTravelTimes
 */
 void idAASLocal::CalculateAreaTravelTimes(void) {
 	int n, i, j, numReach, numRevReach, t, maxt;
-	unsigned short *bytePtr;
+	byte *bytePtr;
 	idReachability *reach, *rev_reach;
 
 	// get total memory for all area travel times
@@ -132,7 +132,7 @@ void idAASLocal::CalculateAreaTravelTimes(void) {
 	}
 
 	areaTravelTimes = (unsigned short *) Mem_Alloc( numAreaTravelTimes * sizeof( unsigned short ) );
-	bytePtr = areaTravelTimes;
+	bytePtr = (byte *) areaTravelTimes;
 
 	for ( n = 0; n < file->GetNumAreas(); n++ ) {
 
@@ -167,7 +167,7 @@ void idAASLocal::CalculateAreaTravelTimes(void) {
 		}
 	}
 
-	assert( ( bytePtr - areaTravelTimes ) <= numAreaTravelTimes * sizeof( unsigned short ) );
+	assert( ( (unsigned int) bytePtr - (unsigned int) areaTravelTimes ) <= numAreaTravelTimes * sizeof( unsigned short ) );
 }
 
 /*
