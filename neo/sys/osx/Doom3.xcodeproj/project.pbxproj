@@ -1734,7 +1734,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
-				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../../curl/lib\"";
+				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = (
 					"-read_only_relocs",
 					suppress,
@@ -1766,7 +1766,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = Info.plist;
-				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../../curl/lib\"";
+				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = (
 					"-finline",
 					"-finline-limit=1000",
