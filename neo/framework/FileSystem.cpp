@@ -816,7 +816,7 @@ const char *idFileSystemLocal::BuildOSPath( const char *base, const char *game, 
 			if (gamePath.HasUpper())
 #endif
 			{
-				common->Warning( "Non-portable: path contains uppercase characters: %s", gamePath.c_str() );
+				common->Warning( "Non-portable: path contains uppercase characters: %s", testPath.c_str() );
 			}
 			
 			// attempt a fixup on the fly
